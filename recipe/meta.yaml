@@ -1,4 +1,4 @@
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RcppDE_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RcppDE/RcppDE_{{ version }}.tar.gz
-  sha256: 8e4a7916a387f06a96efeec77741113efbea5bdda2e065f4f782b536ef76191e
+  sha256: f48aeea87e379beb1a408aef11d65c3f2b8ce09e97c2add6f42f9446ea92fe3b
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
